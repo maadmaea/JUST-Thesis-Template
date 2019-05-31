@@ -1,0 +1,313 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% JUST Master Thesis Template
+% LaTeX Template
+% Version 1.0 (29/05/2019)
+%
+% Author:
+% Maad Ebrahim (mmebrahim16@cit.just.edu.jo)
+%
+% Inspired by:
+% Vel (vel@latextemplates.com)
+%
+% The previous template was based on a template by:
+% Steve Gunn (http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/)
+% Sunil Patel (http://www.sunilpatel.co.uk/thesis-template/)
+%
+% Template license:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+
+
+
+% Note: to repeat the toc header in every page of the toc: keep nesting the AtBeginShipoutNext command the required number of times based on the number of pages in your toc in the MastersDoctoralThesis file (line 561)
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[
+11pt, % The default document font size, options: 10pt, 11pt, 12pt
+oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+english, % ngerman for German
+onehalfspacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+%draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
+%nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
+liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
+toctotoc, % Uncomment to add the main table of contents to the table of contents
+parskip, % Uncomment to add space between paragraphs
+%nohyperref, % Uncomment to not load the hyperref package
+%headsepline, % Uncomment to get a line under the header
+%chapterinoneline, % Uncomment to place the chapter title next to the number on one line
+%consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
+]{MastersDoctoralThesis} % The class file specifying the document structure
+%----------------------------------------------------------------------------------------
+%	MARGIN SETTINGS
+%----------------------------------------------------------------------------------------
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	%inner=2.5cm, % Inner margin
+	%outer=3cm, % Outer margin
+	right=2.5cm,
+	left=3cm,
+	%bindingoffset=.5cm, % Binding offset
+	top=2.5cm, % Top margin
+	bottom=2.5cm, % Bottom margin
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%----------------------------------------------------------------------------------------
+\thesistitle{The Full Title of Your Thesis} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+\supervisor{Main Supervisor Name} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
+\cosupervisor{Co-Supervisor Name}
+\examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
+\degree{Master of Science} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
+\author{Student Full Name} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
+\addresses{Irbid, Jordan} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
+\subject{Computer Science} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
+\keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
+\university{\href{http://www.just.edu.jo}{Jordan University of Science and Technology}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
+\department{\href{http://www.just.edu.jo/FacultiesandDepartments/it/Departments/cs/Pages/Computer\%20Science.aspx}{Department of Computer Science}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
+\group{\href{http://researchgroup.university.com}{Research Group Name}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
+\faculty{\href{http://www.just.edu.jo/FacultiesandDepartments/it/Pages/Default.aspx}{Faculty of Computer and Information Technology}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
+
+\AtBeginDocument{
+%\hypersetup{colorlinks=false} % hides the links in prints
+\hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
+\hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
+\hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
+}
+
+\begin{document}
+\large
+%\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+\pagenumbering{gobble}
+\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+
+%----------------------------------------------------------------------------------------
+%	First PAGE
+%----------------------------------------------------------------------------------------
+\begin{titlepage}
+\begin{center}
+\hspace{0pt}
+\vfill
+{\LARGE \bfseries \MakeUppercase \ttitle\par}
+\vfill
+\hspace{0pt}
+\end{center}
+\end{titlepage}
+%----------------------------------------------------------------------------------------
+%	Second PAGE
+%----------------------------------------------------------------------------------------
+\newpage
+\begin{center}
+\vspace*{2.5cm}
+{\Large \bfseries \MakeUppercase \ttitle\par}\vspace{2cm}
+{\Large By}\\[.3cm]
+{\Large \bfseries \authorname\par}\vspace{1cm}
+{\Large Advisor}\\[.1cm]
+{\Large \bfseries \supname\par}\vspace{1cm}
+{\Large Co-Advisor}\\[.1cm]
+{\Large \bfseries \coname\par}\vspace{1cm}
+\vfill
+\Large{Thesis submitted in partial fulfillment of the requirements for the degree of\\ M.Sc. in \subjectname}
+\vfill
+\Large{At}\\[0.4cm]
+\Large{The Faculty of Graduate Studies \\\univname}\\[2cm] 
+\vfill
+{\Large \monthyeardate\today}\\[4cm]
+\vfill
+\end{center}
+%----------------------------------------------------------------------------------------
+%	Third PAGE
+%----------------------------------------------------------------------------------------
+\newpage
+\begin{center}
+\vspace*{2.5cm}
+{\Large \bfseries \MakeUppercase \ttitle\par}\vspace{2cm}
+{\Large By}\\[.3cm]
+{\Large \bfseries \href{http://students.just.edu.jo/~119202}{\authorname}\par}\vspace{1cm}
+\vfill
+% ------------- left
+\begin{minipage}[t]{0.6\textwidth}
+\begin{flushleft} \Large
+\underline{Signature of Author}\\[2cm]
+\underline{Committee Member}\\ \bigskip \doublespacing
+\href{http://students.just.edu.jo/~119202}{\supname} (Chairman)\\
+\href{http://students.just.edu.jo/~119202}{\coname} (Co-Advisor)\\
+\href{http://students.just.edu.jo/~119202}{Internal Examiner Name} (Member)\\
+\href{http://students.just.edu.jo/~119202}{External Examiner Name} (External Examiner)
+
+\end{flushleft}
+\end{minipage}
+% ------------- right
+\begin{minipage}[t]{0.39\textwidth}
+\begin{flushright} \Large\centering
+...................................\\[2cm]
+\underline{Signature and Date \hspace{1em}}\\ \bigskip \doublespacing
+...................................\\
+...................................\\
+...................................\\
+...................................
+\end{flushright}
+\end{minipage}\\[3cm]
+\vfill
+{\Large \monthyeardate\today}\\[10cm]
+\vfill
+\end{center}
+%----------------------------------------------------------------------------------------
+%	Fourth PAGE
+%----------------------------------------------------------------------------------------
+\newpage
+\includepdf[pages=-]{Arabic/arabic_Tafweed.pdf}
+\cleardoublepage
+\frontmatter
+\pagenumbering{Roman} % Capital Roman Numbering
+%----------------------------------------------------------------------------------------
+%	DEDICATION PAGE
+%----------------------------------------------------------------------------------------
+\cleardoublepage\phantomsection\addchaptertocentry{\normalfont DEDICATION}
+\begin{center}
+{\Large \bfseries DEDICATION}\\[3cm]
+\Large{\textit{\textbf{I dedicate the work done in this thesis}}}\\[2cm]
+\Large{\textit{to every knowledge seeker around the world}}\\[1cm]
+\Large{\textit{to my unique supervisors and professors}}\\[1cm]
+\Large{\textit{to my father, mother, and family members}}\\[1cm]
+\Large{\textit{to my friends, classmates, and colleagues}}\\[2cm]
+\Large{\textit{\textbf{Without whom none of my success would be possible}}}\\[5cm]
+\begin{flushright}
+\textit{\authorname}\\
+\textit{Jordan, \the\year}
+\end{flushright} 
+\end{center}
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGMENT PAGE
+%----------------------------------------------------------------------------------------
+\cleardoublepage\phantomsection\addchaptertocentry{\normalfont ACKNOWLEDGMENT}
+\begin{center}
+{\Large \bfseries ACKNOWLEDGMENT}\\[2cm]
+\end{center}
+{\large
+In the Name of Allah, the Most Merciful, the Most Compassionate. All praise be to Allah, the Lord of the worlds. Prayers and peace be upon Mohamed His servant and messenger. First and foremost, I must acknowledge my limitless and endless thanks to Allah, the Ever-Magnificent; the Ever-Thankful, for His help and bless. I am totally sure that this work would have never become truth, without His guidance.
+
+Continue your acknowledgement ...
+}
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+\tableofcontents % Prints the main table of contents - Check MastersDoctoralThesis (line 561)
+\listoffigures % Prints the list of figures
+\listoftables % Prints the list of tables
+%----------------------------------------------------------------------------------------
+%	LIST OF APPENDICES
+%----------------------------------------------------------------------------------------
+% \newpage
+% \addchaptertocentry{LIST OF APPENDICES}
+% \begin{center}
+% {\LARGE \bfseries LIST OF APPENDICES}\vspace{2cm}  
+% \end{center}
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+\cleardoublepage\phantomsection\addchaptertocentry{\normalfont LIST OF ABBREVIATIONS}
+\begin{center}
+{\Large \bfseries LIST OF ABBREVIATIONS}\\[2cm]
+	\onehalfspacing
+	\setlength\LTleft{0pt}
+    \setlength\LTright{0pt}
+    \begin{longtable}{@{\extracolsep{\fill}}ll@{}}
+	\bigskip \underline{\textbf{\larger{Abbreviation}}} & \underline{\textbf{\larger{Description}}}\\  
+	\textbf{LoA}   & \textbf{L}ist \textbf{o}f \textbf{A}bbreviations \\
+
+	% Manually Add headings in every page
+	%\bigskip \underline{\textbf{\larger{Abbreviation}}} & \underline{\textbf{\larger{Description}}}\\
+	\end{longtable}
+	\addtocounter{table}{1}% Don't count this table as one of the document tables
+\end{center}
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+\begin{abstract}
+\addchaptertocentry{\normalfont\abstractname} % Add the abstract to the table of contents
+\singlespacing
+
+Write your English abstract in this space.
+
+...
+
+...
+
+...
+
+...
+
+This template aims to produce an easy to use LaTex document to produce the best possible thesis formating for master students at Jordan University of Science and Technology in Irbid, Jordan. 
+
+
+\end{abstract}
+%----------------------------------------------------------------------------------------
+%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
+%----------------------------------------------------------------------------------------
+\begin{comment}
+\begin{constants}{lr@{${}={}$}l} % The list of physical constants is a three column table
+% The \SI{}{} command is provided by the siunitx package, see its documentation for instructions on how to use it
+Speed of Light & $c_{0}$ & \SI{2.99792458e8}{\meter\per\second} (exact)\\
+%Constant Name & $Symbol$ & $Constant Value$ with units\\
+\end{constants}
+\end{comment}
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+\begin{comment}
+\begin{symbols}{lll} % Include a list of Symbols (a three column table)
+$a$ & distance & \si{\meter} \\
+$P$ & power & \si{\watt} (\si{\joule\per\second}) \\
+%Symbol & Name & Unit \\
+\addlinespace % Gap to separate the Roman symbols from the Greek
+$\omega$ & angular frequency & \si{\radian} \\
+\end{symbols}
+\end{comment}
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+\mainmatter % Begin numeric (1,2,3...) page numbering
+\pagestyle{thesis} % Return the page headers back to the "thesis" style
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\include{Chapters/Ch1}
+\include{Chapters/Ch2} 
+\include{Chapters/Ch3}
+\include{Chapters/Ch4} 
+\include{Chapters/Ch5} 
+
+\include{Chapters/Chapter1} 
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+% \appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+%\include{Appendices/AppendixA}
+%\include{Appendices/AppendixB}
+%\include{Appendices/AppendixC}
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\cleardoublepage\phantomsection\addchaptertocentry{References}
+\bibliographystyle{unsrtnat} 
+\begingroup
+    \setlength{\bibsep}{15pt}
+    \interlinepenalty=10000
+    \bibliography{references}
+\endgroup
+%----------------------------------------------------------------------------------------
+\cleardoublepage\phantomsection\addchaptertocentry{Abstract in Arabic Language}
+\includepdf[pages=-,pagecommand={}]{Arabic/arabic_Abstract.pdf}
+\end{document}  
