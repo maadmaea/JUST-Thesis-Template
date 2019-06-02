@@ -238,6 +238,24 @@ Tables are an important way of displaying your results, below is an example tabl
 \end{tabular}
 \end{table}
 
+\textbf{always add your table citation in the curly brackets and add square brackets without citation. If your caption does not include citations, you can simply use curly brackets only}
+
+\begin{table}
+\caption[The effects of treatments X and Y on the four groups studied.]{The effects of treatments X and Y on the four groups studied \citet{ebrahim2018performance}}
+\label{tab:treatments2}
+\centering
+\begin{tabular}{l l l}
+\toprule
+\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
+\midrule
+1 & 0.2 & 0.8\\
+2 & 0.17 & 0.7\\
+3 & 0.24 & 0.75\\
+4 & 0.68 & 0.3\\
+\bottomrule\\
+\end{tabular}
+\end{table}
+
 You can reference tables with \verb|\ref{<label>}| where the label is defined within the table environment. See \file{Chapter1.tex} for an example of the label and citation (e.g. Table~\ref{tab:treatments}).
 
 \subsection{Figures}
@@ -254,13 +272,24 @@ There will hopefully be many figures in your thesis (that should be placed in th
 \end{verbatim}
 Also look in the source file. Putting this code into the source file produces the picture of the electron that you can see in the figure below.
 
+
 \begin{figure}[th]
 \centering
 \includegraphics{Figures/Electron}
 \decoRule
-\caption[The caption in the list of figures only for an image of an electron]{An electron (artist's impression).}
+\caption[The caption in the list of figures does not include image citation.]{This is a caption for the image with citation \cite{ebrahim2018performance}.}
 \label{fig:Electron}
 \end{figure}
+
+\textbf{always add your image citation in the curly brackets and add square brackets without citation. If your caption does not include citations, you can simply use curly brackets only}
+\begin{figure}[th]
+\centering
+\includegraphics{Figures/Electron}
+\decoRule
+\caption{The same image caption in both lof and under the image, without citation.}
+\label{fig:Electron2}
+\end{figure}
+
 
 Sometimes figures don't always appear where you write them in the source. The placement depends on how much space there is on the page for the figure. Sometimes there is not enough room to fit a figure directly where it should go (in relation to the text) and so \LaTeX{} puts it at the top of the next page. Positioning figures is the job of \LaTeX{} and so you should only worry about making them look good!
 
