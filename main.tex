@@ -17,14 +17,13 @@
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% ======================================= Important Notes: 
 
 
+% In case of fatal, render, and timeout errors while compiling large projects, clear the Cached Files from the Logs and Outputs Files button that is next to the green compile button in overleaf. Then you can recompile successfully.
 
 
-
-% Note: to repeat the toc header in every page of the toc: keep nesting the AtBeginShipoutNext command the required number of times based on the number of pages in your toc in the MastersDoctoralThesis file (line 561)
-
-
+% To repeat the toc header in every page of the toc: keep nesting the AtBeginShipoutNext command the required number of times based on the number of pages in your toc in the MastersDoctoralThesis file (line 561)
 
 
 %----------------------------------------------------------------------------------------
@@ -302,6 +301,7 @@ $\omega$ & angular frequency & \si{\radian} \\
 %----------------------------------------------------------------------------------------
 \cleardoublepage\phantomsection\addchaptertocentry{References}
 \bibliographystyle{unsrtnat} 
+\singlespacing
 \begingroup
     \setlength{\bibsep}{15pt}
     \interlinepenalty=10000

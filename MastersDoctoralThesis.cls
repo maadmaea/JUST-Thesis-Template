@@ -57,7 +57,7 @@
 \LoadClass{\baseclass}
 
 %  Simple interface for the user  to customize the chapter titles 
-\ProvideDocumentCommand{\abovechapterskip}{}{\vspace*{2cm}}
+\ProvideDocumentCommand{\abovechapterskip}{}{\vspace*{1.7cm}} % 2cm
 \ProvideDocumentCommand{\chapterbelowskip}{}{\vspace*{20pt}}
 \ProvideDocumentCommand{\chapterinbetweenskip}{}{\vspace*{20pt}}
 \ProvideDocumentCommand{\autodot}{}{}
