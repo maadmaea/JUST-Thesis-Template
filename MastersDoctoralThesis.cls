@@ -630,6 +630,10 @@ breaklinks=true,
   {}{}% <success><failure>
 \makeatother
 
+% avoiding chapter-wise numbering
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
 
 \endinput
 % lazyLizardTracer
